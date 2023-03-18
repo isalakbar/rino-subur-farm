@@ -41,6 +41,134 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+@media screen and (max-width: 1980px) {
+  /* dekstop screen */
+  
+  .header-area .main-nav .logo {
+    line-height: 80px;
+    color: #1c6422;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    right: 8rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: 1px #000000;
+  }
+
+  .welcome-area {
+    width: 100%;
+    height: 100vh;
+    min-height: 793px;
+    background-image: url(../images/rino-baner.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .welcome-area .header-text .left-text {
+    position: relative;
+    align-self: center;
+    right: 8rem;
+    margin-top: 35%;
+    transform: perspective(1px) translateY(-30%) !important;
+}
+
+  
+}
+
+@media screen and (max-width: 1440px) {
+  /* dekstop screen */
+  
+  .header-area .main-nav .logo {
+    line-height: 80px;
+    color: #1c6422;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    right: 8rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: 1px #000000;
+  }
+
+  .welcome-area {
+    width: 100%;
+    height: 100vh;
+    min-height: 793px;
+    background-image: url(../images/rino-baner.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .welcome-area .header-text .left-text {
+    position: relative;
+    align-self: center;
+    right: 8rem;
+    margin-top: 35%;
+    transform: perspective(1px) translateY(-30%) !important;
+}
+
+  .header-area .main-nav .nav li {
+    padding-left: 7px !important; 
+    padding-right: 7px !important;
+
+}
+  .header-area .main-nav .nav {
+    margin-left: -6rem;
+
+  }
+  .header-area .main-nav .nav li a{
+    font-size: 12px !important;
+  }
+}
+
+
+@media only screen and (max-device-width: 425px) {
+  /* mini smartphone */
+  .header-area .main-nav .logo {
+    line-height: 80px;
+    color: #1c6422;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    right: 3rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: 1px #000000;
+  }
+  .welcome-area {
+    width: 100%;
+    height: 100vh;
+    min-height: 793px;
+    background-image: url(../images/rino-baner.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .welcome-area .header-text .left-text {
+    position: relative;
+    align-self: center;
+    /* right: 13rem; */
+    margin-top: 35%;
+    transform: perspective(1px) translateY(-30%) !important;
+}
+
+}
 
 .clearfix:after {
   content: ".";
@@ -276,7 +404,7 @@ header
   background: transparent;
 }
 
-.header-area .main-nav .logo {
+/* .header-area .main-nav .logo {
   line-height: 80px;
   color: #1c6422;
   font-size: 28px;
@@ -291,7 +419,7 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   outline: 1px #000000;
-}
+} */
 
 
 .header-area .main-nav .nav {
@@ -656,22 +784,22 @@ header
 welcome
 --------------------------------------------- 
 */
-.welcome-area {
+/* .welcome-area {
   width: 100%;
   height: 100vh;
   min-height: 793px;
   background-image: url(../images/rino-baner.png);
   background-repeat: no-repeat;
   background-position: right top;
-}
+} */
 
-.welcome-area .header-text .left-text {
+/* .welcome-area .header-text .left-text {
   position: relative;
   align-self: center;
   right: 13rem;
   margin-top: 35%;
   transform: perspective(1px) translateY(-30%) !important;
-}
+} */
 
 .welcome-area .header-text h1 {
   font-weight: 900;
@@ -725,11 +853,13 @@ welcome
   .welcome-area .header-text .left-text {
     margin-top: 5%;
     transform: none !important;
+    right: 0
   }
 }
 @media (max-width: 810px) {
   .welcome-area {
     background-size: contain;
+    background-size: 70%;
   }
 
   .welcome-area .header-text {
@@ -740,6 +870,21 @@ welcome
   .container-fluid .col-md-12 {
     margin-right: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-area {
+    background-size: contain;
+    margin-top: 2rem;
+  }
+
+  .welcome-area .header-text .left-text {
+    right: 0;
+  }
+  .welcome-area .header-text h1{
+    line-height: 40px;
+    font-size: 32px;
   }
 }
 
@@ -783,6 +928,7 @@ about
   position: relative;
   max-width: 100%;
   margin-bottom: 40px;
+  width: 50%;
 }
 
 .features-item h4 {
@@ -877,8 +1023,8 @@ testimonials
 }
 
 #testimonials .item .testimonial-content {
-  background: rgb(244,129,63);
-  background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
+  background: rgb(114 193 48);
+  background: linear-gradient(145deg, rgb(63 244 88) 0%, rgb(45 58 47) 100%);
   margin-left: 60px;
   padding: 40px 30px;
   text-align: center;
@@ -931,8 +1077,10 @@ testimonials
   line-height: 80px;
   text-align: center;
   display: inline-block;
-  background: rgb(244,129,63);
-  background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
+  /* background: rgb(244,129,63);
+  background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%); */
+  background: rgb(114 193 48);
+  background: linear-gradient(145deg, rgb(63 244 88) 0%, rgb(45 58 47) 100%);
   position: absolute;
 }
 
@@ -948,8 +1096,8 @@ testimonials
   line-height: 80px;
   text-align: center;
   display: inline-block;
-  background: rgb(244,129,63);
-  background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
+  background: rgb(114 193 48);
+  background: linear-gradient(145deg, rgb(45 58 47) 0%, rgb(63 244 88) 100%);
   position: absolute;
 }
 
@@ -984,7 +1132,7 @@ footer
 footer {
   margin-top: 200px;
   padding-top: 120px;
-  background-image: url(../images/aset-peganti/footer-bg.png);
+  background-image: url(../images/aset-peganti/footer-bg-ijo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
