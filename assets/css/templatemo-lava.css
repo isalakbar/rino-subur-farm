@@ -34,6 +34,14 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
+.lists {
+  padding-right: 10px;
+}
+.content-top{
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: 12rem;
+}
 .flex-content, .flex-list {
   display: flex;
 }
@@ -100,7 +108,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
     text-transform: uppercase;
     letter-spacing: 2px;
     float: left;
-    right: 8rem;
+    /* right: 8rem; */
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -979,7 +987,8 @@ promotion
 }
 
 #promotion .left-image {
-  align-self: center;
+  /* align-self: center; */
+  /* margin-left: 38%; */
 }
 
 #promotion .right-text ul {
@@ -1000,6 +1009,7 @@ promotion
   display: inline-block;
   float: left;
   margin-right: 30px;
+  margin-bottom: 1rem;
 }
 /* #promotion .right-text img:hover{
   transform:skew(5deg, 2deg);
@@ -1007,10 +1017,11 @@ promotion
 } */
 
 #promotion .right-text h4 {
-  font-size: 22px;
-  color: #1e1e1e;
-  margin-bottom: 15px;
-  margin-top: 3px;
+    font-size: 17px;
+    color: #1e1e1e;
+    margin-bottom: 25px;
+    margin-top: 2rem;
+    text-align: left;
 }
 
 
