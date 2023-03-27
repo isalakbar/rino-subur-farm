@@ -34,7 +34,15 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
-.container .stage {
+.flex-content, .flex-list {
+  display: flex;
+}
+.contentss {
+  display: flex;
+  overflow: hidden;
+
+}
+.container .stage, .contentss {
   /* display: block; */
   display: flex;
   overflow: hidden;
@@ -1395,5 +1403,10 @@ preloader
   100% {
     opacity: 0;
   }
+}
+
+.content-1, .content-2{
+  display: flex;
+  flex-direction: row;
 }
 
